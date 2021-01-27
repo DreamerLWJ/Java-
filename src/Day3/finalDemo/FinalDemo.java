@@ -9,6 +9,7 @@ public class FinalDemo {
     public FinalDemo(int count) {
         // 可以在构造方法内部对其进行初始化
         this.count = count;
+        // 添加修改
     }
 
     public void update(int count) {
