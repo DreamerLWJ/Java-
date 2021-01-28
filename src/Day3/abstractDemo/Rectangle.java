@@ -12,13 +12,4 @@ public class Rectangle extends Shape{
     public void calculatedArea() {
         area = x * y;
     }
-
-    public static void main(String[] args) {
-        Rectangle rectangle = new Rectangle(2, 4);
-        area(rectangle);
-    }
-
-    static void area(Shape shape) {
-        System.out.println(shape.getArea());
-    }
 }

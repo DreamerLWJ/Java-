@@ -10,6 +10,11 @@ public class Person{
     public void info() {
         System.out.println("大家好！我叫" + name);
     }
+
+    @Override
+    public String toString() {
+        return "这是被重写的 toString() 方法";
+    }
 }
 
 // 细节：为什么不写 public？
