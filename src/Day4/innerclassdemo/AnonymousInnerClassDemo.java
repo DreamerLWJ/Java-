@@ -30,9 +30,10 @@ class Milk implements Product {
 class Demo3 {
     public static void main(String[] args) {
         AnonymousInnerClassDemo anonymousInnerClassDemo = new AnonymousInnerClassDemo();
-        // 匿名内部类，适合于只使用一次的内部类
+        // 可以使用多次的类
         Milk milk = new Milk();
 
+        // 匿名内部类，适合于只使用一次的内部类
         anonymousInnerClassDemo.test(new Product() {
             @Override
             public double getPrice() {

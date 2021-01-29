@@ -16,8 +16,4 @@ public interface MyInterface {
     static void dis() {
         System.out.println("I am interface!");
     }
-
-    public static void main(String[] args) {
-        int i = MyInterface.FINAL_VAR;
-    }
 }
