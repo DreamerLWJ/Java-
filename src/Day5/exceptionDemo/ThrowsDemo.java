@@ -5,6 +5,7 @@ public class ThrowsDemo {
         try {
             test();
         } catch (ArithmeticException e) {
+            // 上层方法处理下层方法异常
             System.err.println("test()方法出现算术逻辑异常！");
         }
     }

@@ -42,9 +42,11 @@ public class HashMapDemo {
             System.out.println("key:" + kV.getKey() + " " + "value:" + kV.getValue());
         }
 
-        // foreach遍历
+        // foreach 遍历
         System.out.println("\nforeach遍历如下：");
-
+        for (Map.Entry<String, Integer> entry : entries) {
+            System.out.println("key:" + entry.getKey() + " " + "value:" + entry.getValue());
+        }
 
         // HashMap操作
         System.out.println(hashMap.get("lwj"));

@@ -17,6 +17,10 @@ public class ProblemDemo {
         arrayList.add(s4);
 
         // 问题：需要强制类型转换
-        String s = (String) arrayList.get(2);
+        Object o = arrayList.get(2);
+        // 安全类型转换
+        if (o.getClass() == String.class) {
+            String s = (String) arrayList.get(2);
+        }
     }
 }

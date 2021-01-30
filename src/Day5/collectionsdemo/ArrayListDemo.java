@@ -14,27 +14,27 @@ public class ArrayListDemo {
         arrayList.add(5);
 
         // ArrayList 遍历
-//        for (int i = 0; i < arrayList.size(); i++) {
-//            System.out.println(arrayList.get(i));
-//        }
+        for (int i = 0; i < arrayList.size(); i++) {
+            System.out.println(arrayList.get(i));
+        }
 
         // foreach 遍历
-//        for (int i : arrayList) {
-//            System.out.println(i);
-//        }
+        for (int i : arrayList) {
+            System.out.println(i);
+        }
 
         // 迭代器遍历
-//        Iterator<Integer> iterator = arrayList.iterator();
-//        while (iterator.hasNext()) {
-//            System.out.println(iterator.next());
-//        }
+        Iterator<Integer> iterator = arrayList.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
 
         // forEach()方法
-//        arrayList.forEach(new Consumer<Integer>() {
-//            @Override
-//            public void accept(Integer integer) {
-//                System.out.println(integer);
-//            }
-//        });
+        arrayList.forEach(new Consumer<Integer>() {
+            @Override
+            public void accept(Integer integer) {
+                System.out.println(integer);
+            }
+        });
     }
 }
